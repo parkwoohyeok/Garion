@@ -82,6 +82,10 @@ textarea {
     margin: auto;
   }
 
+  .trapezoid-clip {
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 1000%);
+  }
+
   .loading-path {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
