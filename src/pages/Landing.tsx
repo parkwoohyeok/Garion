@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { useCallback, useEffect, useState } from 'react'
-import landing from '/public/assets/landing.jpg'
+import landing from '/public/assets/images/landing.jpg'
 
 export default function Landing() {
   const [showDiv, setShowDiv] = useState(false)
@@ -25,7 +25,7 @@ export default function Landing() {
           }`}
         >
           <h1
-            className={`text-[50px] font-bold text-white pt-[100%] bottom-20 transition-all duration-1000 transform ${
+            className={`text-[50px] font-bold text-white pt-[110%] bottom-10 transition-all duration-1000 transform ${
               showText
                 ? 'translate-y-0 opacity-100'
                 : 'translate-y-10 opacity-0'
@@ -38,7 +38,6 @@ export default function Landing() {
         <Image
           className="max-h-[100vh]"
           src={landing}
-          objectFit="cover"
           alt="랜딩이미지"
           priority
         />

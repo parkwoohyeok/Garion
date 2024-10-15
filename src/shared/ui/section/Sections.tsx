@@ -1,11 +1,15 @@
 import Landing from '@pages/Landing'
-import Section from './Section'
+import Ceo from '@pages/Ceo'
+import BusinessObjective from '@pages/BusinessObjective'
+import News from '@pages/News'
+import RoadToCome from '@pages/RoadToCome'
 
 const SECTIONS = [
   (props: any) => <Landing />,
-  (props: any) => <Section {...props} index={1} />,
-  (props: any) => <Section {...props} index={2} />,
-  (props: any) => <Section {...props} index={3} />,
+  (props: any) => <Ceo />,
+  (props: any) => <BusinessObjective />,
+  (props: any) => <News />,
+  (props: any) => <RoadToCome />,
 ]
 
 export default SECTIONS

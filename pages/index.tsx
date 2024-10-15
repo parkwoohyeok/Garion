@@ -37,7 +37,7 @@ export default function index() {
 
   return (
     <div className="w-[100vw] h-[100vh] overflow-hidden" ref={containerRef}>
-      {SECTIONS.map((SECTION, idx) => (
+      {SECTIONS?.map((SECTION, idx) => (
         <SECTION key={`${idx + 1}-section`} curSection={curSection} />
       ))}
     </div>
