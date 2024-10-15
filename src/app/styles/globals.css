@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('./reset.css');
+@import url('./fonts.css');
+
+@font-face {
+  font-family: 'HSBombaram';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
 }
 
 body {
   background-color: var(--default-bg);
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'HSBombaram', sans-serif;
   font-display: swap;
 }
 
@@ -80,6 +91,10 @@ textarea {
     left: 0;
     right: 0;
     margin: auto;
+  }
+
+  .trapezoid-clip {
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 1000%);
   }
 
   .loading-path {
